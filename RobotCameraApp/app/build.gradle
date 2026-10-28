@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.robotcamera.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.robotcamera.app"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+
+    // CameraX
+    def camerax_version = "1.3.1"
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-video:${camerax_version}"
+    implementation "androidx.camera:camera-view:${camerax_version}"
+
+    // NanoHTTPD (HTTP Server siêu nhẹ)
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+
+    // Google ML Kit Barcode / QR Marker Scanning (Fiducial Tag Tracking)
+    implementation 'com.google.mlkit:barcode-scanning:17.3.0'
+
+    // Google ML Kit Pose Detection (Fast on-device body landmark tracking)
+    implementation 'com.google.mlkit:pose-detection:18.0.0-beta3'
+}

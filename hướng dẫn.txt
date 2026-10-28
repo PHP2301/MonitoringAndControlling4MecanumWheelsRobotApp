@@ -1,0 +1,40 @@
+Robot Camera App - Bản Cập Nhật Giao Diện Chuẩn Samsung Galaxy Camera (One UI) & Chống Delay Siêu Tốc
+
+🚀 CÁC NÂNG CẤP MỚI NHẤT VỪA HOÀN THÀNH:
+
+1. Giao Diện Bảng Cài Đặt Cao Cấp (Samsung One UI Bottom Sheet):
+   - Đã loại bỏ 100% các icon/emoji rườm rà trong bảng cài đặt, thay thế bằng kiểu chữ phẳng, thanh lịch, sang trọng.
+   - Thiết kế dạng bảng trượt Bottom Sheet bo tròn 24dp trên nền xanh đen One UI sâu thẳm.
+   - Bố cục phân chia thành từng khối thẻ rõ ràng:
+     + Khối CHẾ ĐỘ TRUYỀN STREAM:
+       * Thẻ "Siêu tốc (Chống trễ)": 480p SD - Tối ưu điều khiển xe robot, độ trễ cực thấp.
+       * Thẻ "Cân bằng": 720p HD - Cân bằng giữa độ nét và độ mượt mà.
+       * Thẻ "Sắc nét": 1080p Full HD - Chi tiết cao, yêu cầu kết nối mạng mạnh.
+       (Thẻ đang kích hoạt có viền sáng và huy hiệu "Đang chọn" màu xanh ngọc nổi bật).
+     + Khối BỐ CỤC KHUNG NGẮM:
+       * Hàng "Lưới tỷ lệ 3x3": Nút Bật / Tắt riêng biệt.
+       * Hàng "Thước cân bằng chân trời": Nút Bật / Tắt riêng biệt.
+     + Khối KẾT NỐI PHẦN MỀM MÁY TÍNH:
+       * Hiển thị đường dẫn luồng video trực quan và nút "Sao chép liên kết".
+     + Nút "Đóng" lớn ở đáy bảng trượt.
+
+2. Thẻ Hiển Thị IP WiFi Ngoài Màn Hình (HUD Badge):
+   - Nổi bật ở trên cùng: [📡 IP: 192.168.2.xx] chữ xanh ngọc phát sáng.
+   - Nhìn vào màn hình Tablet là thấy ngay địa chỉ IP để gõ vào ô IP trên phần mềm máy tính (PC Monitor).
+   - Chạm vào thẻ IP này: Tự động sao chép toàn bộ link stream vào bộ nhớ tạm.
+
+3. Nút [⚙ Cài đặt] Ở Góc TRÁI TRÊN CÙNG:
+   - Viên thuốc kính mờ bo tròn sang trọng với nhãn chữ "Cài đặt" rõ ràng.
+
+4. ĐÃ FIX TRIỆT ĐỂ VẤN ĐỀ DELAY (ĐỘ TRỄ) KHI DI CHUYỂN CAMERA:
+   - Phía Android (MjpegServer): Cơ chế Zero-Latency Drop-Old-Frame không tích lũy bộ đệm.
+   - Phía PC (C# App): Cấu hình Network Caching = 0ms, kích hoạt ":drop-late-frames" và ":skip-frames".
+
+📦 FILE CÀI ĐẶT APK MỚI NHẤT (ĐÃ GỒM TOÀN BỘ CÁC BẢN VÁ MỚI NHẤT):
+- File APK: RobotCamera.apk (hoặc RobotCameraApp.apk)
+- Đường dẫn: C:\METASQUARE\MonitoringAndControlling4MecanumWheelsRobotApp\RobotCamera.apk
+- Các nâng cấp cốt lõi trong bản APK này:
+  + Tích hợp CameraX Video ghi file MP4 chuẩn chất lượng HD lưu trực tiếp vào Bộ sưu tập (Movies/RobotCamera).
+  + Tự động cập nhật ảnh thu nhỏ (thumbnail) của video vào ô tròn Bộ sưu tập ở góc dưới bên trái màn hình.
+  + Khóa giữ nguyên Tab Điều Khiển: Khi ở Tab [ĐIỀU KHIỂN], bấm chụp ảnh, quay video, dừng quay, đổi camera hoàn toàn không bị văng khỏi tab.
+  + Chống treo/đơ ứng dụng PC khi ngắt kết nối hoặc khi thoát app robot ra ngoài màn hình chính.

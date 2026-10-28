@@ -1,0 +1,19 @@
+# Visual Studio / .NET build & NuGet packages
+.vs/
+.idea/
+.vscode/
+packages/
+**/bin/
+**/obj/
+
+# Android / Gradle build outputs
+**/build/
+.gradle/
+local.properties
+
+# Large archives & temporary logs (>100MB GitHub limit)
+*.rar
+*.zip
+*.nupkg
+transcript_full.jsonl
+window_dump*.xml

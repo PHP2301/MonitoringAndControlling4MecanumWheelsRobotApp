@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Cung mũi tên xoay phía trên (từ trái qua đỉnh sang phải) -->
+    <path
+        android:pathData="M 4.9,9.5 A 7.5,7.5 0 0,1 19.0,8.8"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Đầu mũi tên phía trên bên phải -->
+    <path
+        android:pathData="M 19.3,4.8 L 19.3,9.0 L 15.1,9.0"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Cung mũi tên xoay phía dưới (từ phải qua đáy sang trái) -->
+    <path
+        android:pathData="M 19.1,14.5 A 7.5,7.5 0 0,1 5.0,15.2"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Đầu mũi tên phía dưới bên trái -->
+    <path
+        android:pathData="M 4.7,19.2 L 4.7,15.0 L 8.9,15.0"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
